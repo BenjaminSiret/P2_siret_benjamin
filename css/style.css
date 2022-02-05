@@ -7,6 +7,7 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  background-color: white;
 }
 
 #general-container {
@@ -14,7 +15,7 @@ body {
 }
 
 
-/*******HEADER*******/
+/*************HEADER************/
 
 header {
   display: flex;
@@ -54,6 +55,48 @@ nav {
   bottom: 1px;
   color: #0065FC;
 }
+
+
+/****************FORM***************/
+
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#h2-light {
+  font-weight: normal;
+}
+
+i {
+  padding: 23px;
+  border: none;
+  border-radius: 18px 0 0 18px;
+  background-color: #F2F2F2;
+  font-size: 25px;
+
+}
+
+input {
+  padding: 20px 0 20px 20px;
+  border: 1px solid #F2F2F2;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+button {
+  background-color: #0065FC;
+  border-radius: 0 21px 21px 0;
+  color:white;
+  font-weight: 700;
+  padding: 21px;
+  font-size: 25px;
+  border: none;
+
+}
+
 
 
 /*************RESPONSIVE***************/
