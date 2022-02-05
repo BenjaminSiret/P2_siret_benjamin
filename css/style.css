@@ -1,11 +1,21 @@
+/******* GENERAL*******/
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
 
-#main-container {
+#general-container {
   margin:0 40px;
 }
+
+
+/*******HEADER*******/
+
 header {
   display: flex;
   height: 130px;
@@ -18,7 +28,7 @@ header {
 }
 
 #logo img {
-  height: 60px;
+  height: 52px;
   margin-left: 20px;
 }
 
@@ -43,4 +53,62 @@ nav {
   position: relative;
   bottom: 1px;
   color: #0065FC;
+}
+
+
+/*************RESPONSIVE***************/
+
+@media (max-width: 992px) {
+
+  #general-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;;
+  }
+
+  #logo {
+    justify-content: center;
+  }
+
+  #logo img{
+    margin-left:40px;
+  }
+
+  nav {
+    justify-content: space-evenly;
+    margin-top: 32px;
+  }
+
+  .nav-a {
+    border-bottom: 3px solid #F2F2F2;
+    height: 198%
+  }
+
+  .nav-a:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065FC;
+    position: relative;
+    top: 1%;
+  }
+
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  #general-container {
+    margin: 0px;
+  }
+
+  .nav-a {
+    width: 100%;
+  }
+
 }
