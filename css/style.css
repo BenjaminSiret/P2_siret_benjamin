@@ -14,6 +14,10 @@ body {
   margin:0 50px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /*************HEADER************/
 
@@ -39,11 +43,11 @@ h1 {
 
 #h2-light {
   font-size: 21px;
+  font-weight: normal;
 }
 
 h3 {
   font-size: 21px;
-
 }
 
 nav {
@@ -79,9 +83,6 @@ form {
   margin-top: 30px;
 }
 
-#h2-light {
-  font-weight: normal;
-}
 
 #map-marker {
   padding: 20px;
@@ -89,7 +90,6 @@ form {
   border-radius: 18px 0 0 18px;
   background-color: #F2F2F2;
   font-size: 25px;
-
 }
 
 input {
@@ -163,6 +163,7 @@ button {
 .info {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
 .info i {
@@ -177,8 +178,135 @@ button {
 
 .info p {
   font-size: 18px;
-  margin-left: 10px;;
+  margin-left: 10px;
 }
+
+
+/**************MAIN******************/
+.grey {
+  color: #F2F2F2
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.accomodation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.accomodation h2 {
+  margin: 40px 45px;
+}
+.accomodation-town {
+  width: 68%;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+}
+
+.accomodation-popular {
+  width: 30%;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+}
+
+#popular-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.cards-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 45px 0;
+}
+
+.cards-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-regular {
+  background-color: white;
+  width: 350px;
+  box-shadow: 0px 5px 10px #999;
+  border: 6px white solid;
+  border-radius: 28px;
+  transition: transform .1s;
+}
+
+.card-regular:hover, .card-inline:hover {
+  transform: scale(1.03);
+}
+
+.card-regular-image {
+  height: 170px;
+  overflow: hidden;
+}
+
+.card-regular-image img {
+  width: 100%;
+  border-radius: 23px;
+}
+
+.card-regular-text {
+  margin: 0 0 2% 4%;
+}
+
+.card-regular-text h3, .card-regular-text p {
+  margin: 3% 0;
+}
+
+.stars-regular {
+  color: #0065FC
+}
+
+.card-inline {
+  background-color: white;
+  margin-bottom: 45px;
+  width: 450px;
+  box-shadow: 0px 5px 10px #999;
+  border: 6px white solid;
+  border-radius: 28px;
+  transition: transform .1s;
+}
+
+.card-inline a {
+  display: flex;
+  height: 180px;
+}
+
+.card-inline-image {
+  width: 160px;
+  overflow: hidden;
+}
+
+.card-inline-image img {
+  height: 100%;
+  width: 190px;
+  border-radius: 23px;
+  object-fit: cover;
+}
+
+.card-inline-text {
+  margin-left: 20px;
+  padding-right: 22px;;
+}
+
+.card-inline-text h3, .card-inline-text p {
+  margin: 10px 0;
+}
+
+.stars-inline {
+  color: #0065FC;
+  margin-top: 20%;
+}
+
 
 /*************RESPONSIVE***************/
 
