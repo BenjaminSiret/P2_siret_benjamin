@@ -47,7 +47,7 @@ h1 {
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 17px;
 }
 
 nav {
@@ -198,18 +198,21 @@ button {
 }
 
 .accomodation h2 {
-  margin: 40px 45px;
+  margin: 45px 23px;
 }
+
 .accomodation-town {
-  width: 68%;
+  width: 67%;
   background-color: #F2F2F2;
   border-radius: 25px;
+  padding: 12px;
 }
 
 .accomodation-popular {
-  width: 30%;
+  width: 31%;
   background-color: #F2F2F2;
   border-radius: 25px;
+  padding: 12px;
 }
 
 #popular-title {
@@ -221,8 +224,9 @@ button {
 
 .cards-row {
   display: flex;
-  justify-content: space-evenly;
-  margin: 45px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .cards-column {
@@ -233,11 +237,13 @@ button {
 
 .card-regular {
   background-color: white;
-  width: 350px;
+  width: 30%;
+  height: 220px;
   box-shadow: 0px 5px 10px #999;
-  border: 6px white solid;
-  border-radius: 28px;
+  border: 5px white solid;
+  border-radius: 23px;
   transition: transform .1s;
+  margin-bottom: 30px;
 }
 
 .card-regular:hover, .card-inline:hover {
@@ -245,13 +251,14 @@ button {
 }
 
 .card-regular-image {
-  height: 170px;
+  height: 130px;
   overflow: hidden;
+  border-radius: 19px 19px 0 0;
 }
 
 .card-regular-image img {
-  width: 100%;
-  border-radius: 23px;
+  width: 120%;
+  border-radius: 15px;
 }
 
 .card-regular-text {
@@ -269,11 +276,12 @@ button {
 .card-inline {
   background-color: white;
   margin-bottom: 45px;
-  width: 450px;
+  width: 90%;
   box-shadow: 0px 5px 10px #999;
-  border: 6px white solid;
-  border-radius: 28px;
+  border: 5px white solid;
+  border-radius: 20px;
   transition: transform .1s;
+  height: 144px;
 }
 
 .card-inline a {
@@ -287,15 +295,16 @@ button {
 }
 
 .card-inline-image img {
-  height: 100%;
+  height: 74%;
   width: 190px;
-  border-radius: 23px;
+  border-radius: 15px;
   object-fit: cover;
 }
 
 .card-inline-text {
   margin-left: 20px;
-  padding-right: 22px;;
+  padding-right: 22px;
+  position: relative;
 }
 
 .card-inline-text h3, .card-inline-text p {
@@ -305,6 +314,8 @@ button {
 .stars-inline {
   color: #0065FC;
   margin-top: 20%;
+  position: absolute;
+  bottom: 52px;
 }
 
 
@@ -366,6 +377,24 @@ button {
     margin-right: 20px;
   }
 
+  .accomodation {
+    flex-direction: column-reverse;
+  }
+
+  .accomodation-popular, .accomodation-town {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cards-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-regular {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
 
 
