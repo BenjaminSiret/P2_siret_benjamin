@@ -191,12 +191,12 @@ button {
 
 
 /**************MAIN******************/
-#search-results {
+.search-results {
   display: flex;
   justify-content: space-between;
 }
 
-#accomodations {
+.accomodations {
   background-color: #F2F2F2;
   border-radius: 20px;
   width: 66%;
@@ -247,7 +247,7 @@ button {
   color: #C1C1C1;
 }
 
-#populars {
+.populars {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -257,8 +257,15 @@ button {
   padding: 30px 40px;
 }
 
-#populars h2 {
-  margin-bottom: 0;
+.popular-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.populars h2 {
+  margin: 0;
 }
 
 .card-popular {
@@ -292,6 +299,75 @@ button {
 
 
 /*************RESPONSIVE***************/
+
+@media (max-width: 1300px) {
+  #general-container {
+    margin: 0 30px;
+  }
+
+  .accomodations {
+    padding: 30px 30px;
+  }
+
+  .populars {
+    padding: 30px 30px;
+  }
+}
+
+@media (max-width: 1189px) {
+  #general-container {
+    margin: 0 20px;
+  }
+
+  .accomodations {
+    padding: 30px 20px;
+  }
+
+  .populars {
+    padding: 30px 20px;
+  }
+
+  .card {
+    width: 32%;
+  }
+
+  .card-popular {
+    width: 100%;
+  }
+
+  .search-results h3 {
+    font-size: 16px;
+  }
+  .filter-item {
+    margin-left: 18px;
+  }
+}
+
+
+@media (max-width: 1101px) {
+  .accomodations {
+    padding: 30px 10px;
+  }
+
+  .populars {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 1037px) {
+  .accomodations .card-text {
+    padding-left: 2px;
+  }
+
+  .card-popular .card-text {
+    padding-left: 6px;
+  }
+
+  .filter-item {
+    margin-left: 8px;
+  }
+}
+
 
 @media (max-width: 992px) {
 
@@ -342,12 +418,39 @@ button {
   .filters-wrapper {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 16px;
   }
 
   .filter-item {
-    margin-left: 0;
-    margin-right: 20px;
+    margin-right: 16px;
   }
+
+  .filters h3 {
+    margin-left: 10px;
+  }
+
+  .search-results {
+    flex-direction: column-reverse;
+  }
+
+  .populars {
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .popular-title {
+    width: 80%;
+  }
+
+  .card {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .accomodations {
+    width: 100%;
+  }
+
 
 }
 
@@ -433,13 +536,37 @@ button {
   .filters i {
     height: 55px;
     width: 55px;
-    margin-right: -54px;
+    margin-right: -57px;
+    margin-top: 10px;
     font-size: 21px
   }
 
   .filter-item h3 {
-    padding: 16px 16px 16px 62px;
+    padding: 16px 16px 16px 51px;
     margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .info {
+    padding-left: 20px;
+  }
+
+  .populars {
+    border-radius: 0;
+  }
+
+  .popular-title {
+    width: 100%;
+  }
+
+  .accomodations {
+    border-radius: 0;
+    background-color: white;
+    padding: 30px 20px;
+  }
+
+  .cards-row {
+    flex-direction: column;
   }
 
 }
