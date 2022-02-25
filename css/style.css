@@ -302,18 +302,23 @@ button {
 
 
 /*************activity***************/
+#activity {
+  margin-top: 60px;
+}
 
 .activity-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
 }
 
 .single-card-container, .two-cards-container {
-  width: 100%;
+  width: 23%;
 }
 
 .single-card-container {
   height: 450px;
+
 }
 .two-cards-container {
   display: flex;
@@ -322,7 +327,7 @@ button {
 }
 
 .activity-container .card {
-  width: 88%;
+  width: 98%;
   border: none;
 }
 
@@ -353,7 +358,23 @@ button {
 }
 
 
+/***************FOOTER*****************/
 
+footer {
+  display: flex;
+  justify-content: start;
+  background-color: #F2F2F2;
+  padding: 30px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  line-height: 2;
+  margin-right: 210px;
+}
 
 /*************RESPONSIVE***************/
 
