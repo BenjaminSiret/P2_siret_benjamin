@@ -246,7 +246,7 @@ button {
   font-size: 12px;
 }
 
-.star-grey {
+.star-empty {
   color: #C1C1C1;
 }
 
@@ -479,13 +479,13 @@ footer {
 
   .nav-a {
     border-bottom: 3px solid #F2F2F2;
-    height: 198%
+    height: 198%;
   }
 
   .nav-a:hover {
     border-top: none;
     border-bottom: 3px solid #0065FC;
-    top: 1%
+    top: 1%;
   }
 
   .filters-wrapper {
@@ -495,7 +495,7 @@ footer {
   }
 
   .filter-item {
-    margin-right: 16px;
+    margin-right: 2px;
     margin-top: 5px;
   }
 
@@ -522,6 +522,7 @@ footer {
     width: 100%;
     margin: 10px auto;
   }
+
   .accomodations-cards-container {
     flex-direction: column;
     margin-bottom: 0;
@@ -631,11 +632,7 @@ footer {
   .filters-wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
-  }
-
-  .filter-item {
-    margin: 5px;0 0
+    margin-left: 10px;
   }
 
   .filters i {
@@ -658,25 +655,10 @@ footer {
 
   .populars {
     border-radius: 0;
-    padding: 30px 20px;
-  }
-
-  .popular-title {
-    width: 100%;
   }
 
   .accomodations {
-    border-radius: 0;
     background-color: white;
-    padding: 30px 20px;
-  }
-
-  .accomodations h2 {
-    margin-left: 0;
-  }
-
-  .search-results .card {
-    width: 100%;
   }
 
   footer {
