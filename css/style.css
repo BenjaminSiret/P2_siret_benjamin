@@ -193,8 +193,8 @@ button {
 /**************MAIN******************/
 
 
-/*****accomodations + populars*****/
-.search-results {
+/*****search-results*****/
+#search-results {
   display: flex;
   justify-content: space-between;
 }
@@ -399,7 +399,7 @@ footer {
     width: 32%;
   }
 
-  .search-results h3 {
+  #search-results h3 {
     font-size: 16px;
   }
 
@@ -503,7 +503,7 @@ footer {
     margin-left: 10px;
   }
 
-  .search-results {
+  #search-results {
     flex-direction: column-reverse;
     align-items: center;
   }
